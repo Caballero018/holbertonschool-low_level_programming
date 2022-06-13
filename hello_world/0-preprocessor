@@ -1,2 +1,2 @@
 #!/bin/bash
-'#define $CFILE c'
+#include <stdio.h>
