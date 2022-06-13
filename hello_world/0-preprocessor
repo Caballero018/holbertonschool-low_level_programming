@@ -1,2 +1,2 @@
 #!/bin/bash
-'#include'$CFILE
+gcc $CFILE.c
