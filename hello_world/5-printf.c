@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <cstdlib>
+using std::cout;
 
 /**
  * main - Entry point
