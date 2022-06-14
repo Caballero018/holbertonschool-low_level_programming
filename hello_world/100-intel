@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE 
+nasm -f elf $CFILE 
