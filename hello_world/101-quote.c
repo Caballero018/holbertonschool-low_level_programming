@@ -7,6 +7,8 @@
  * Return: Always 0 (Success)
  */
 
+using namespace std;
+
 int main(void)
 {
 	int face;
