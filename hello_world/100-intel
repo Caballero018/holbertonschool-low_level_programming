@@ -1,2 +1,2 @@
 #!/bin/bash
-masm $CFILE 
+nasm $CFILE 
