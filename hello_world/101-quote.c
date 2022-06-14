@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include "iostream"
-
 /**
  * main - cout
  *
@@ -11,9 +9,11 @@ using namespace std;
 
 int main(void)
 {
-	int face;
+	FILE* temo = fopen("temporal.txt", "w") ;
 
-	cout << "and that piece of art is useful" << "\"" << - Dora Korpar, 2015-10-19" << "\n";
+	 fputs("and that piece of art is useful\"- Dora Korpar, 2015-10-19\n", temo);
+
+	 fclose(fopen)
 
 	return (0);
 }
