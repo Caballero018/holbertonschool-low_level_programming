@@ -9,15 +9,16 @@ int main(void)
 {
 	char i = 'a';
 	char x = 'z';
-	
+
 	while (i <= x)
 	{
 		putchar(i);
 		putchar('\n');
 		i++;
-
-		return (0);
 	}
+	
+	return (0);
+
 }
 
 
