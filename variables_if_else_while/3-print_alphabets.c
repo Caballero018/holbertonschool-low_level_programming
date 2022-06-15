@@ -6,18 +6,24 @@
  * Return: 0
  *
  */
+
 int main(void)
 {
 	char x = 'a', r = 'z', n = 'A', l = 'Z';
-	
+
 	for (; x <= r; x++)
 	{
 		putchar(x);
 	}
-	putchar('\n');
-	
+
 	for (; n <= l; n++)
 	{
 		putchar(n);
 	}
+
+	putchar('\n');
+	
+	return (0);
 }
+
+
