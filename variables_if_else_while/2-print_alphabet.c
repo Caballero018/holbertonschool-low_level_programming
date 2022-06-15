@@ -13,10 +13,9 @@ int main(void)
 	while (i <= x)
 	{
 		putchar(i);
-		putchar('\n');
 		i++;
 	}
-	
+
 	return (0);
 
 }
