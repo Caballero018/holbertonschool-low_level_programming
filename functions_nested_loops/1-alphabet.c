@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
+ * main - alphabet
  *
+ * Return: 0
  */
 int main(void)
 {
@@ -9,4 +11,6 @@ int main(void)
 
 	for (; x <= 'z'; x++)
 		_putchar(x);
+
+	return (0);
 }
