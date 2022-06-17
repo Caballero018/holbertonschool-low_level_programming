@@ -4,7 +4,6 @@
  * print_last_digit - Last digit of value of X
  *
  * @x: Number
- * @y: Last digit of number
  *
  * Return: 0
  */
