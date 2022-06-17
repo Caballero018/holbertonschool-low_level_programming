@@ -9,7 +9,7 @@
 
 int _islower(int c)
 {
-	switch ()
+	switch ('a' <= 'z')
 	{
 		case _islower('o');
 		case _islower(108);
