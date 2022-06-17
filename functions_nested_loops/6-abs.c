@@ -3,14 +3,20 @@
 /**
  * _abs - Calculate the absolute value of an integer
  *
- * @int: Absolute value
+ * @x: Representation type int
  *
  * Return: 0
  *
  */
-int _abs(int)
+int _abs(int x)
 {
-	int x;
-
-	_abs(x);
+	if (x < 0)
+	{
+		return (-x);
+	}
+	else if (x > 0)
+	{
+		return (x);
+	}
+	return (0);
 }
