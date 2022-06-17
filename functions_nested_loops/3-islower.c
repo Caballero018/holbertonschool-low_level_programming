@@ -9,22 +9,16 @@
 
 int _islower(int c)
 {
-	switch ('a' <= 'z')
-	{
-		case _islower('o');
-		case _islower(108);
-		case _islower('c');
-		case _islower('I');
-		case _islower('s');
-		case _islower(70);
-		case _islower(20);
-		case _islower('U');
-		case _islower('n');
-		case _islower(0);
-		case: _islower('H');
+	char c;
 
+	if(islower(c))
+	{
+		_putchar(c);
+		return (1);
 	}
-       	
-	_islower ();
-	return (1);
+	else
+	{
+		_putchar(c);
+		return (0);
+	}
 }
