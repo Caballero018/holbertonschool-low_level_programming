@@ -1,16 +1,23 @@
 #include "main.h"
 
 /**
- * print_line - line
- * @n: Variable
+ *
+ *
  */
 void print_line(int n)
 {
-	char c;
+	int c;
 
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else if (n > 0)
+	{
 		for (c = 0; c < n; c++)
 		{
 			_putchar('_');
 		}
-	_putchar('\n');
+	}
+
 }
