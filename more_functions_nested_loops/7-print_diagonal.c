@@ -2,7 +2,7 @@
 /**
  * print_diagonal - Print spaces and diagonal
  *
- * @x: Variable of the function
+ * @n: Variable of the function
  */
 void print_diagonal(int n)
 {
