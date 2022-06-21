@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
+ * print_line - This function prints a '_' if the number is greater than 0,
+ * otherwise it prints line breaks.
  *
+ * @n: Variable of the function
  *
  */
 void print_line(int n)
