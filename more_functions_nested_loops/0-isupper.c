@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * _issuper - This function checks if the
- * letter is uppercase or not
+ * issuper - This function checks if the letter is uppercase or not
  *
  * @c: This variable helps us determine if the letters are uppercase
  * Return: 1 is returned if it is uppercase and 0 if it is not.
