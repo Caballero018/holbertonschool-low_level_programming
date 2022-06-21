@@ -1,18 +1,27 @@
 #include "main.h"
 /**
-* print_square - function that print a square
-* @size: variable of the size
-*/
+ * print_diagonal - Print spaces and diagonal
+ *
+ * @n: Variable of the function
+ */
 void print_square(int size)
 {
-	int i, j;
+        int x, i;
 
-	if (size <= 0)
-		_putchar('\n');
-	for (i = 0; i < size; i++)
-	{
-		for (j = 0; j < size; j++)
+        if (size <= 0)
+        {
+                _putchar('\n');
+        }
+        for (x = 0; x < size; x++)
+        {
+		_putchar('#');
+                for (i = 0; i <= size; i++)
+                {
 			_putchar('#');
-		_putchar('\n');
-	}
+
+			if (i == size)
+				_putchar('\n');
+
+                }
+        }
 }
