@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * issuper - This function checks if the letter is uppercase or not
+ * _isupper - Function that prints if it is uppercase
  *
- * @c: This variable helps us determine if the letters are uppercase
+ * @c: variable that determines whether it is uppercase
  * Return: 1 is returned if it is uppercase and 0 if it is not.
  *
  */
 int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c > 'A' && c < 'Z')
 	{
 		return (1);
 	}
