@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * print_numbers - Print integers from 0 to 9.
+ * print_most_numbers -  checks for checks for a digit (0 through 9).
  *
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int c;
 
-	for (c = 0; c < 10 ; c++)
+	for (c = '0' ; c <= '9'; c++)
 	{
-		if (c != '2' && c != '6')
+		if (c != '2' && c != '4')
 		{
 			_putchar(c);
 		}
 	}
 	_putchar('\n');
-
 }
