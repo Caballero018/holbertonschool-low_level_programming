@@ -5,15 +5,11 @@
  */
 void print_line(int n)
 {
-	_putchar('\n');
-	_putchar('_');
-	_putchar('_');
-	_putchar('\n');
+	char c;
 
-	for (n = 0; n <= 10; n++)
-	{
-		_putchar('_');
-	}
-	_putchar('\n');
+		for (c = 0; c < n; c++)
+		{
+			_putchar('_');
+		}
 	_putchar('\n');
 }
