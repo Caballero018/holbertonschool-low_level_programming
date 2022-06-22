@@ -5,26 +5,26 @@
 */
 int main(void)
 {
-	int i;
+	int x;
 
-	for (i = 1; i < 100; i++)
-		if (i % 15 == 0)
+	for (x = 0; x <= 100; x++)
+	{
+		if (x%3==0 && x%5==0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
-		else if (i % 5 == 0)
+		else if (x%3==0)
 		{
-			printf("Buzz ");
+			printf("fizz");
 		}
-		else if (i % 3 == 0)
+		else if (x%5==0)
 		{
-			printf("Fizz ");
+			printf("buzz");
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d ",x);
 		}
-	printf("Buzz");
-	printf("\n");
+	}
 	return (0);
 }
