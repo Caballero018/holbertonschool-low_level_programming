@@ -7,16 +7,21 @@
  */
 void rev_string(char *s)
 {
-	int d = 0;
+	char rev;
+        int i = 0, x;
 
-	while (s[d] != '\0')
+	while (s[i] != '\0')
 	{
-		d++;
+		i++;		
+	}
+	
+	for (x = 0; x < i; x++)
+	{
+		i--;
+		rev = s[x];
+		s[x] = s[i];
+		s[i] = rev;
+
 	}
 
-	while (d)
-	{
-		_putchar(s[d]);
-		d--;
-	}
 }
