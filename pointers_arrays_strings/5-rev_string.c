@@ -20,6 +20,12 @@ void rev_string(char *s)
 		x++;
 		l--;
 	}
+	while (l <= x)
+	{
+		s[l] = rev[l];
+		l++;
+
+
+	}
 	s = rev;
-	printf("%s", s);
 }
