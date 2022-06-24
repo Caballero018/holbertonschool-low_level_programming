@@ -11,7 +11,7 @@ int _slen(char *s);
 void rev_string(char *s)
 {
 	int x = 0, l = _slen(s);
-	char rev[1024];
+	char rev[l];
 
 	rev[l] = '\0';
 	l = l - 1;
