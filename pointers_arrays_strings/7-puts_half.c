@@ -8,15 +8,17 @@
  */
 void puts_half(char *str)
 {
-	int longi = 0;
+	int longi = 0, x = 5;
 
 	while (str[longi] != '\0')
 	{
-		if (longi > 4)
+		if (longi %20 == 1)
 		{
-			_putchar(str[longi]);
+			_putchar(str[longi])
 		}
 		longi++;
+
 	}
+
 	_putchar('\n');
 }
