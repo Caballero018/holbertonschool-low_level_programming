@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
+ * puts2 - function that prints arrays of
+ * pointers str, except if is pair.
  *
+ * @str: variable that is a pointer to integer.
  *
  */
 void puts2(char *str)
