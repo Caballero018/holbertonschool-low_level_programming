@@ -1,29 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Print numbers of 0 to 89 with putchar.
- *
- * Return: 0
- */
+* main - Print combinations of two digit numbers
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int x = 0;
+  int tens;
+  int ones;
 
-	for (; x < 90; x++)
+  for (tens = 0; tens <= 9; tens++)
+    {
+      for (ones = tens + 1; ones <= 9; ones++)
 	{
-		putchar((x / 10) + '0');
-		putchar((x % 10) + '0');
-		if (x == 89)
-		{
-			putchar('\n');
-		
-		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
+	  putchar(tens + '0');
+	  putchar(ones + '0');
 
+	  if (tens < 8)
+	    {
+	      putchar(',');
+	      putchar(' ');
+	    }
 	}
-	return (0);
+    }
+  putchar('\n');
+
+  return (0);
 }
