@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-int _slen(char *s);
-
 /**
  * rev_string - reverse strings.
  *
@@ -10,42 +8,21 @@ int _slen(char *s);
  */
 void rev_string(char *s)
 {
-	int x = 0, l = _slen(s);
+	int x = 0, n = 0;
 	char rev[1026];
 
-	rev[l] = '\0';
-	l = l - 1;
-
-	while (l >= 0)
+	while (s[x])
 	{
-		rev[x] = s[l];
+		rev[x] = s[x];
 		x++;
-		l--;
 	}
-	while (l <= x)
+	x = x - 1;
+
+	while (x >= 0)
 	{
-		s[l] = rev[l];
-		l++;
-
+		s[x] = rev[n];
+		n++;
+		x--;
 
 	}
-}
-
-/**
- * _slen - returns the length of a string.
- *
- * @s: Variable that point char.
- * Return: point
- *
- *
- */
-int _slen(char *s)
-{
-	int l = 0;
-
-	while (s[l] != '\0')
-	{
-		l++;
-	}
-	return (l);
 }
