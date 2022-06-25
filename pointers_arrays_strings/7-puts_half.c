@@ -17,16 +17,16 @@ void puts_half(char *str)
 	
 	n = (longi - 1) / 2;
 	
-	if (longi %2 == 0)
+	if (longi %2 == 1)
 	{
-		for (x = 0; x <= n; x++)
+		for (x = 0; x < n; x++)
 		{
 			_putchar(str[x]);
 		}
 	}
 	else
 	{
-		for (x = n ; x <= longi ; x++)
+		for (x = (n + 1) ; x < longi ; x++)
 		{
 			_putchar(str[x]);
 		}
