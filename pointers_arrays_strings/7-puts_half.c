@@ -16,7 +16,7 @@ void puts_half(char *str)
 	}
 	n = longi / 2;
 
-	if (longi % 2 == 0)
+	if (longi % 2 == 0 && longi > 10)
 	{
 		for (x = 0; x < n; x++)
 		{
@@ -25,7 +25,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (x = (n + 1) ; x < longi ; x++)
+		for (x = n ; x < longi ; x++)
 		{
 			_putchar(str[x]);
 		}
