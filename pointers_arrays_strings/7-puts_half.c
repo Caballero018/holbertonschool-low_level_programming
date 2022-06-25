@@ -11,13 +11,12 @@ void puts_half(char *str)
 	int longi = 0, n, x;
 
 	while (str[longi] != '\0')
-	{
-		longi++;
+	{	
+			longi++;
 	}
+	n = longi / 2;
 
-	n = longi/ 2;
-	
-	if (longi %2 == 0)
+	if (longi % 2 == 0)
 	{
 		for (x = 0; x < n; x++)
 		{
