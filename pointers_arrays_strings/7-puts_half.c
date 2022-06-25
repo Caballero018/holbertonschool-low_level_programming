@@ -25,9 +25,17 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (x = n + 1 ; x < longi ; x++)
+		if (longi <= 10)
+			x = n;
+		else
+		{
+			x = n + 1;
+		}
+
+		while (x < longi)
 		{
 			_putchar(str[x]);
+			x++;
 		}
 	}
 	_putchar('\n');
