@@ -14,7 +14,7 @@ void puts_half(char *str)
 	{
 		longi++;
 	}
-	
+
 	n = longi/ 2;
 	
 	if (longi %2 == 0)
@@ -26,7 +26,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (x = n ; x < longi ; x++)
+		for (x = (n + 1) ; x < longi ; x++)
 		{
 			_putchar(str[x]);
 		}
