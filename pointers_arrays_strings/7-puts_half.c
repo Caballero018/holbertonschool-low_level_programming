@@ -11,8 +11,8 @@ void puts_half(char *str)
 	int longi = 0, n, x;
 
 	while (str[longi] != '\0')
-	{	
-			longi++;
+	{
+		longi++;
 	}
 	n = longi / 2;
 
