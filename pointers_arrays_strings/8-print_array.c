@@ -9,26 +9,16 @@
  */
 void print_array(int *a, int n)
 {
-	int x, i;
+	int x = 0;
 
-	n = 0;
-
-	while (a[n] != '\0')
+	while (x < n)
 	{
-		n++;
-	}
-	x = n / 2;
+		printf("%d", a[x]);
 
-	for (i = 0; i <= x; i++)
-	{
-		if (i == x)
-			printf("%d\n", a[i]);
-		else if (i > x)
-		{
-			putchar('\n');
-		}
-		else
-			printf("%d, ", a[i]);
+		if (x < (n - 1))
+			printf(", ");
+		x++;
 	}
+	putchar('\n');
 
 }
