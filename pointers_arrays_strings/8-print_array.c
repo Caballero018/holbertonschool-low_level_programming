@@ -23,6 +23,10 @@ void print_array(int *a, int n)
 	{
 		if (i == x)
 			printf("%d\n", a[i]);
+		else if (i > x)
+		{
+			putchar('\n');
+		}
 		else
 			printf("%d, ", a[i]);
 	}
