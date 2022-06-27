@@ -17,6 +17,8 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
+
+	dest[i] = ' ';
 	i = (i - 1);
 	
 
@@ -25,7 +27,6 @@ char *_strcat(char *dest, char *src)
 		x++;
 	}
 
-	dest[i] = ' ';
 	dest[i] = x;
 
 	return (dest);
