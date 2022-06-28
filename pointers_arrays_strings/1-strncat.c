@@ -1,8 +1,14 @@
 #include "main.h"
 
 /**
+ * _strncat - concatenates two strings according to their number of bytes.
  *
+ * @dest: First string.
+ * @src: Second string, this shows the number of bytes according
+ * to the indicative of n.
+ * @n: Number of bytes.
  *
+ * Return: dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {
