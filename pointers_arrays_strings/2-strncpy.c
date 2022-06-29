@@ -5,6 +5,7 @@
  *
  * @dest: Copy to src.
  * @src: String.
+ * @n: Number of bytes.
  *
  * Return: dest.
  *
