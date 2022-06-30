@@ -7,24 +7,21 @@
  * Return: n
  *
  */
-char *leet(char *s)
+char *leet(char *n)
 {
-	char d[5][2] = {{'a', 'A'}, {'e', 'E'}, {'o', 'O'}, {'t', 'T'}, {'l', 'L'}};
-	char v[] = {'4', '3', '0'};
 	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	i = 0;
-	while (s[i] != '\0')
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		j = 0;
-		while (j < 100)
+		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == d[i][j] && d[i][j] != ' ')
-				s[i] = v[i];
-			j++;
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
 		}
-		i++;
 	}
-
-	return (s);
+	return (n);
 }
