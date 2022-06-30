@@ -21,8 +21,6 @@ char *leet(char *s)
 		{
 			if (s[i] == d[i][j] && d[i][j] != ' ')
 				s[i] = v[i];
-			else
-				break;
 			j++;
 		}
 		i++;
