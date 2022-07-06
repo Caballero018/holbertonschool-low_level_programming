@@ -4,6 +4,8 @@
 /**
  * main - Name
  *
+ * @argc: Stands for argument count.
+ * @argv: stands for argument values.
  * Return: 0 always.
  */
 int main(int argc, char *argv[])
