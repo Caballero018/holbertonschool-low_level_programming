@@ -5,7 +5,7 @@
  *
  * @argc: Stands for argument count.
  * @argv: stands for argument values.
- * Return:
+ * Return: 0 if it doesn't output something other than a number.
  */
 int main(int argc, char *argv[])
 {
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	for (; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (j = 0; argv[i][j]; j++)
 		{
 			if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
 			{
