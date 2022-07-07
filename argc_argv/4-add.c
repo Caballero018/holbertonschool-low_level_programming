@@ -3,19 +3,19 @@
 /**
  * main - Program that adds positive numbers.
  *
- * @argc: 
- * @argv:
+ * @argc: Stands for argument count.
+ * @argv: stands for argument values.
  * Return:
  */
 int main(int argc, char *argv[])
 {
-	int i = 0, sum = 0, j = 0;
-	
+	int i = 1, sum = 0, j = 0;
+
 	for (; i < argc; i++)
 	{
-		for (j = 0; argv[j]; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!(argv[j] >= '0' && argv[j] <= '9'))
+			if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
 			{
 				printf("Error\n");
 				return (1);
