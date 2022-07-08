@@ -17,19 +17,17 @@ char *_strdup(char *str)
 
 	sr = malloc(sizeof(str) * i);
 
-	for (j = 0 ;str[j]; j++)
+	for (j = 0; str[j]; j++)
 	{
 		sr[j] = str[j];
 	}
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
+
 	if (sr == NULL)
-	{
 		return (NULL);
-	}
+
 	return (sr);
 
 	free(sr);
