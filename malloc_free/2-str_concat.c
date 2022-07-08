@@ -2,7 +2,12 @@
 #include <stdlib.h>
 
 /**
+ * str_concat - Concatenate two strings
+ * using malloc.
  *
+ * @s1: String to which s2 is concatenated.
+ * @s2: S1 is contacted.
+ * Return: A point to char.
  */
 char *str_concat(char *s1, char *s2)
 {
