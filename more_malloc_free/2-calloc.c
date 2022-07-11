@@ -14,7 +14,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *res;
 	unsigned int i = 0;
 
-	if (nmemb == '0' || size == '0')
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	res = malloc(nmemb * size);
@@ -25,6 +25,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		res[i] = 0;
 
 	return (res);
-	free(res);
 
 }
