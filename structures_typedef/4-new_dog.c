@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	for (i = 0; i < nlon; i++) /* The copy of d->name was created */
-		d->name[i] = d->name[i];
+		d->name[i] = name[i];
 
 	d->age = age;
 
@@ -43,7 +43,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	for (i = 0; i < olon; i++) /* The copy of d->owner was created */
-		d->owner[i] = d->owner[i];
+		d->owner[i] = owner[i];
 
 	return (d);
 }
