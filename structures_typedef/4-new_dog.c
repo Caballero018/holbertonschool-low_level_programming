@@ -23,7 +23,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[olon])
 		olon++;
 
-	d->name = malloc(sizeof(d->name) * nlon + 1); /* Sufficient copy space */
+	d->name = malloc(nlon * sizeof(d->name)); /* Sufficient copy space */
 	if (d->name == NULL)				/* is reserved dynamically */
 	{
 		free(d);
@@ -34,7 +34,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	d->age = age;
 
-	d->owner = malloc(sizeof(d->owner) * olon); /* Sufficient copy space */
+	d->owner = malloc(olon * sizeof(d->owner)); /* Sufficient copy space */
 	if (d->owner == NULL)				/* is reserved dynamically */
 	{
 		free(d->owner);
