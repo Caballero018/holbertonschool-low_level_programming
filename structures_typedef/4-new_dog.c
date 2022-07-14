@@ -1,43 +1,49 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 /**
- * new_dog - creates a new dog.
- * @name: pointer to a char for name of dog
- * @age: age of dog
- * @owner: pointer to a char for owner of dog
- * Return: pointer to a new dog of type dog_t
- **/
+ * new_dog - Function that stores a copy of the name and owner.
+ *
+ * @name: Copy of name of dog.
+ * @age: Age of dog.
+ * @owner: Copy of name of owner of dog.
+ * Return: d
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int nameLen, ownerLen, i;
-	dog_t *d1;
+	int nlon = 0, olon = 0, i; /*n'lon'(diminutive of longitude) */
+	dog_t *d;			/* and o'lon'(diminutive of longitude) */
 
-	d1 = (dog_t *)malloc(sizeof(dog_t));
-	if (d1 == NULL)
+	d = (dog_t *)malloc(sizeof(dog_t));
+
+	if (d == NULL)
 		return (NULL);
-	nameLen = ownerLen = 0;
-	while (name[nameLen++])
-		;
-	while (owner[ownerLen++])
-		;
-	d1->name = malloc(nameLen * sizeof(d1->name));
-	if (d1->name == NULL)
+	while (name[nlon])
+		nlon++;
+	while (owner[olon])
+		olon++;
+
+	d->name = malloc(nlon * sizeof(d->name)); /* Sufficient copy space */
+	if (d->name == NULL)				/* is reserved dynamically */
 	{
-		free(d1);
+		free(d);
 		return (NULL);
 	}
-	for (i = 0; i <= nameLen; i++)
-		d1->name[i] = name[i];
-	d1->age = age;
-	d1->owner = malloc(ownerLen * sizeof(d1->owner));
-	if (d1->owner == NULL)
+	for (i = 0; i <= nlon; i++) /* The copy of d->name was created */
+		d->name[i] = name[i];
+
+	d->age = age;
+
+	d->owner = malloc(olon * sizeof(d->owner)); /* Sufficient copy space */
+	if (d->owner == NULL)				/* is reserved dynamically */
 	{
-		free(d1->name);
-		free(d1);
+		free(d->name);
+		free(d);
+
 		return (NULL);
 	}
-	for (i = 0; i <= ownerLen; i++)
-		d1->owner[i] = owner[i];
-	return (d1);
+	for (i = 0; i <= olon; i++) /* The copy of d->owner was created */
+		d->owner[i] = owner[i];
+
+	return (d);
 }
