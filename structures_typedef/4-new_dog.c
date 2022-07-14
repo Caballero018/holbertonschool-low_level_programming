@@ -32,9 +32,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; i < nlon; i++) /* The copy of d->name was created */
 		d->name[i] = d->name[i];
 
-	d1->age = age;
+	d->age = age;
 
-	d->owner = malloc(sizeof(d->owner) * olen); /* Sufficient copy space */
+	d->owner = malloc(sizeof(d->owner) * olon); /* Sufficient copy space */
 	if (d->owner == NULL)				/* is reserved dynamically */
 	{
 		free(d->owner);
