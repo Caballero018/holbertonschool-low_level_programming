@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * create_array - Function that produces output according to a format.
@@ -15,11 +16,12 @@ char *create_array(unsigned int size, char c)
 
 	ar = (char *)malloc(size * sizeof(int));
 
-	if (size == 0 || ar == NULL)
+	if (size == 0 && ar == NULL)
+	{
 		return (NULL);
+	}
 
 	for (; i < size; i++)
 		ar[i] = c;
-
 	return (ar);
 }
