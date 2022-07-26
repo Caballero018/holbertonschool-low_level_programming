@@ -4,8 +4,8 @@
 /**
  * print_list - Function that prints all the elements of a list_t list.
  *
- * @h:
- * Return:
+ * @h: Strcuct.
+ * Return: Number of nodes Number of nodes.
  */
 size_t print_list(const list_t *h)
 {
@@ -17,7 +17,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)");
 		else
 			printf("[%d]%s", h->len, h->str);
-		h = h->next;		
+		h = h->next;
 		n++;
 	}
 	return (n);
