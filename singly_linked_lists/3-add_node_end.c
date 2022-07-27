@@ -6,9 +6,9 @@
  * add_node_end - Function that adds a new node at
  * the end of a list_t list.
  *
- * @head:
- * @str:
- * Return:
+ * @head: List
+ * @str: String to print.
+ * Return: rev.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
