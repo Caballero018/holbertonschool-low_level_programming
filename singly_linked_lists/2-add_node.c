@@ -23,7 +23,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (ls == NULL)
 		return (NULL);
 
-	while (str[++i] != NULL)
+	while (str[++i] != 0)
 		;
 
 	ls->str = dup;
