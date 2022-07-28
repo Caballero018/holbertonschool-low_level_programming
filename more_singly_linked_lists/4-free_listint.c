@@ -8,7 +8,7 @@
  */
 void free_listint(listint_t *head)
 {
-	if (head->n == 1)
+	if (head->n <= 1)
 		free(head);
 	else
 	{
