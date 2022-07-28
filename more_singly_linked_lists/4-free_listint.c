@@ -8,5 +8,12 @@
  */
 void free_listint(listint_t *head)
 {
-	free(head);
+	if (head->n == 1)
+		free(head);
+	else
+	{
+		free(head);
+		head = head->next;
+	}
+
 }
