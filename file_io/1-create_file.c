@@ -20,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 		while (text_content[i])
 			i++;
 
-	cre = open(filename, O_RDWR, 0600);
+	cre = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	wr = write(cre, text_content, i);
 	if ((wr == -1 || cre == -1))
 		return (-1);
