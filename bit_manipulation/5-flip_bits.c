@@ -20,7 +20,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 		if (identifier == 1)
 			count++;
-		different = different  >> 1;
+		different = different >> 1;
 	}
 	return (count);
 }
