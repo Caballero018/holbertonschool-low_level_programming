@@ -14,13 +14,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node, *ax = NULL;
 	unsigned long int i = 0;
 
-	if (!ht || !key || !value || *key)
+	if (!ht || !key || !value || !*key)
 		return (0);
 
 	i = key_index((const unsigned char *)key, ht->size);
 	ax = ht->array[i];
 
-	while (ax != NULL)
+	while (ax)
 	{
 		if (strcmp(ax->key, key) == 0)
 		{
