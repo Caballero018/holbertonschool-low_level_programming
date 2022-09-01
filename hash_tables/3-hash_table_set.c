@@ -20,7 +20,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	i = key_index((const unsigned char *)key, ht->size);
 	ax = ht->array[i];
 
-	while (ax)
+	while (ax != NULL)
 	{
 		if (strcmp(ax->key, key) == 0)
 		{
